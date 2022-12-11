@@ -1,0 +1,14 @@
+\begin{forest}
+	featureDiagram
+	[Pizza,abstract[base,concrete,mandatory][main\_ingredients,concrete,mandatory[cheese,concrete,mandatory][tomato\_sauce,concrete,mandatory][dough,concrete,mandatory][chili,concrete,optional][garlic,concrete,optional]][sub\_ingredients,concrete,optional[Veg,concrete,optional[corn,concrete,optional][pineapple,concrete,optional][paprika,concrete,mandatory]][NonVeg,concrete,optional[Ham,concrete,optional][Salami,concrete,optional][Tuna,concrete,optional][Salmon,concrete,optional]]]]	
+	\matrix [anchor=north west] at (current bounding box.north east) {
+		\node [placeholder] {}; \\
+	};
+	\matrix [draw=drawColor,anchor=north west] at (current bounding box.north east) {
+		\node [label=center:\underline{Legend:}] {}; \\
+		\node [abstract,label=right:Abstract Feature] {}; \\
+		\node [concrete,label=right:Concrete Feature] {}; \\
+		\node [mandatory,label=right:Mandatory] {}; \\
+		\node [optional,label=right:Optional] {}; \\
+	};
+\end{forest}
