@@ -11,13 +11,87 @@ import scala.collection.mutable
  * Interface for the database components and decorators.
  */
 trait Database {
-  def read(key: String): Option[String]
-  def write(key: String, value: String): Unit
-  def commit(): Int
-  def rollback(): Int
+  def read(key: String): Any
+  def write(key: String, value: String): Any
+  def commit(): Any
+  def rollback(): Any
   val storageType: StorageType
   private[decorator] def storage(): Storage
 }
 
 
-// TODO: implement task 1b
+ class  MapStorageDatabase extends Database{
+   private val Storage: Storage = utils.MapStorage()
+   private val tempstorage = utils.ListStorage() 
+   override def read(key: String) : Option[String] = Storage.get(key)
+   override def write(key: String, content: String): Any  = Storage.put(key, content)
+   override def commit() : Any = tempstorage.size() 
+   override def rollback(): Any = tempstorage.size()
+   val storageType =  StorageType.MAP
+   protected[decorator] def storage(): Storage = utils.MapStorage()
+}
+ 
+ 
+ class  ListStorageDatabase extends Database{
+   private val Storage: Storage = utils.ListStorage()
+   private val tempstorage = utils.ListStorage() 
+   override def read(key: String) : Option[String] = Storage.get(key)
+   override def write(key: String, content: String): Any  = Storage.put(key, content)
+   override def commit() : Any = tempstorage.size() 
+   override def rollback(): Any = tempstorage.size()
+   val storageType =  StorageType.LIST
+   protected[decorator] def storage(): Storage = utils.ListStorage()
+}
+ 
+ class Read(val database:Database) extends Database{
+   protected val Storage: Storage = if (database.toString == "MapStorageDatabase") utils.MapStorage() else utils.ListStorage() 
+   override def read(key: String) : Option[String] = Storage.get(key)
+   override def write(key: String, content: String) : Any = ConfigurationError()
+   override def commit() : Any = ConfigurationError()
+   override def rollback(): Any = ConfigurationError()
+   override val storageType = if (database.toString == "MapStorageDatabase") StorageType.MAP else StorageType.LIST
+   override protected[decorator] def storage(): Storage = if (database.toString == "MapStorageDatabase") utils.MapStorage() else utils.ListStorage()
+}
+ 
+ 
+ class Write(val database:Database) extends Database{
+   protected val Storage: Storage = if (database.toString == "MapStorageDatabase") utils.MapStorage() else utils.ListStorage() 
+   override def read(key: String) : Option[String] = Storage.get(key)
+   override def write(key: String, content: String) : Unit = Storage.put(key, content)
+   override def commit() : Any = ConfigurationError()
+   override def rollback(): Any = ConfigurationError()
+   override val storageType = if (database.toString == "MapStorageDatabase") StorageType.MAP else StorageType.LIST
+   override protected[decorator] def storage(): Storage = if (database.toString == "MapStorageDatabase") utils.MapStorage() else utils.ListStorage()
+}
+ 
+ class Transaction(val database:Database) extends Database{
+   protected val Storage: Storage = if (database.toString == "MapStorageDatabase") utils.MapStorage() else utils.ListStorage() 
+   private val tempstorage = utils.ListStorage() 
+   override def read(key: String) : Option[String] = Storage.get(key)
+   override def write(key: String, content: String) : Unit = Storage.put(key, content)
+   override def commit() : Any = tempstorage.size()
+   override def rollback(): Any = tempstorage.size()
+   override val storageType = if (database.toString == "MapStorageDatabase") StorageType.MAP else StorageType.LIST
+   override protected[decorator] def storage(): Storage = if (database.toString == "MapStorageDatabase") utils.MapStorage() else utils.ListStorage()
+}
+ 
+ class Logging(val database:Database) extends Database{
+   protected val Storage: Storage = if (database.toString == "MapStorageDatabase") utils.MapStorage() else utils.ListStorage() 
+   private val tempstorage = utils.ListStorage() 
+   override def read(key: String) : Unit = 
+     Storage.get(key)
+     println(s"Reading value for key '$key'.")
+   override def write(key: String, content: String) : Unit = 
+     val size = Storage.put(key, content)
+     println(s"Writing value '$content' at key '$key'.")
+   override def commit() : Any = 
+     val size = tempstorage.size()
+     println(s"Committing $size entries.")
+   override def rollback(): Any = 
+     val size = tempstorage.size()
+     println(s"Rolling back ${size} entries.")
+   override val storageType = if (database.toString == "MapStorageDatabase") StorageType.MAP else StorageType.LIST
+   override protected[decorator] def storage(): Storage = if (database.toString == "MapStorageDatabase") utils.MapStorage() else utils.ListStorage()
+}
+ 
+ 
