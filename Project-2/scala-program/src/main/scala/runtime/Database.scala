@@ -31,8 +31,8 @@ class DatabaseConfig(
  */
 class Database(val config: DatabaseConfig){
   var storageType = config.storageType
-  var Storage = if (config.storageType.toString == "MAP") MapStorage() else ListStorage()
-  val tempstorage = ListStorage() 
+  var Storage = if (config.storageType.toString == "MAP") utils.MapStorage() else utils.ListStorage()
+  val tempstorage = utils.ListStorage() 
   def read(key:String):  Option[String] =
     if config.logging == true then
       println(s"Reading value for key '$key'.")
@@ -45,7 +45,7 @@ class Database(val config: DatabaseConfig){
         println(s"Committing $size entries.")
       tempstorage.foreach((key, content) => Storage.put(key, content))
       return size
-    else ConfigurationError()
+    else utils.ConfigurationError()
     
   def write(key:String,content:String): Unit =  
       if config.logging == true then

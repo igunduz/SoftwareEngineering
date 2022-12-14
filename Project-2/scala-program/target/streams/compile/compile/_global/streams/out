@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /mnt/c/Users/ibgun/Desktop/Lectures/Software Engineering/Assignments/2/Assignment_02_-_Project_Skeleton/se-ws2223-assignment-02-student_version/src/main/scala/decorator/Database.scala:27:36 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m27 |[0m   [33moverride[0m [33mdef[0m read(key: String) : None[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                    ^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                    Not found: type None[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

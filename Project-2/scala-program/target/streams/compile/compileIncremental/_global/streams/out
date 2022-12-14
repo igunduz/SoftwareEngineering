@@ -1,20 +1,110 @@
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m
 [0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
-[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 0 products, 0 sources, 0 libraries[0m
+[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 26 products, 5 sources, 2 libraries[0m
 [0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/decorator/Database.scala, ${BASE}/src/main/scala/utils/Storage.scala, ${BASE}/src/main/scala/traits/Database.scala, ${BASE}/src/main/scala/utils/Exceptions.scala, ${BASE}/src/main/scala/runtime/Database.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(${BASE}/src/main/scala/runtime/Database.scala, ${BASE}/src/main/scala/utils/Exceptions.scala, ${BASE}/src/main/scala/traits/Database.scala, ${BASE}/src/main/scala/utils/Storage.scala, ${BASE}/src/main/scala/decorator/Database.scala), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())[0m
-[0m[[0m[0mdebug[0m] [0m[0mFull compilation, no sources in previous analysis.[0m
-[0m[[0m[0mdebug[0m] [0m[0mall 5 sources are invalidated[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: [0m
-[0m[[0m[0mdebug[0m] [0m[0mRecompiling all sources: number of invalidated sources > 50.0 percent of all sources[0m
+[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(${BASE}/src/main/scala/decorator/Database.scala), unmodified = ...),Set(),Set(),API Changes: Set())[0m
+[0m[[0m[0mdebug[0m] [0m[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial source changes:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	removed: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	added: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(${BASE}/src/main/scala/decorator/Database.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(de.uni_saarland.cs.se.decorator.Transaction, de.uni_saarland.cs.se.decorator.Database, de.uni_saarland.cs.se.decorator.ListStorageDatabase, de.uni_saarland.cs.se.decorator.MapStorageDatabase, de.uni_saarland.cs.se.decorator.Read, de.uni_saarland.cs.se.decorator.Logging, de.uni_saarland.cs.se.decorator.Write)[0m
+[0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	product: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(de.uni_saarland.cs.se.decorator.Transaction, de.uni_saarland.cs.se.decorator.Database, de.uni_saarland.cs.se.decorator.ListStorageDatabase, de.uni_saarland.cs.se.decorator.MapStorageDatabase, de.uni_saarland.cs.se.decorator.Read, de.uni_saarland.cs.se.decorator.Logging, de.uni_saarland.cs.se.decorator.Write)[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(${BASE}/src/main/scala/decorator/Database.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: de.uni_saarland.cs.se.decorator.Transaction, de.uni_saarland.cs.se.decorator.Database, de.uni_saarland.cs.se.decorator.ListStorageDatabase, de.uni_saarland.cs.se.decorator.MapStorageDatabase, de.uni_saarland.cs.se.decorator.Read, de.uni_saarland.cs.se.decorator.Logging, de.uni_saarland.cs.se.decorator.Write[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding de.uni_saarland.cs.se.decorator.ListStorageDatabase by de.uni_saarland.cs.se.decorator.Database[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding de.uni_saarland.cs.se.decorator.MapStorageDatabase by de.uni_saarland.cs.se.decorator.Database[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding de.uni_saarland.cs.se.decorator.Read by de.uni_saarland.cs.se.decorator.Database[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding de.uni_saarland.cs.se.decorator.Logging by de.uni_saarland.cs.se.decorator.Database[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding de.uni_saarland.cs.se.decorator.Write by de.uni_saarland.cs.se.decorator.Database[0m
 [0m[[0m[0mdebug[0m] [0m[0mcompilation cycle 1[0m
-[0m[[0m[0minfo[0m] [0m[0mcompiling 5 Scala sources to /mnt/c/Users/ibgun/Desktop/Lectures/Software Engineering/Assignments/2/Assignment_02_-_Project_Skeleton/se-ws2223-assignment-02-student_version/target/scala-3.2.1/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /mnt/c/Users/ibgun/Desktop/Lectures/Software Engineering/Assignments/2/Assignment_02_-_Project_Skeleton/se-ws2223-assignment-02-student_version/target/scala-3.2.1/classes ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mReturning already retrieved and compiled bridge: /home/igunduz/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-sbt-bridge/3.2.1/scala3-sbt-bridge-3.2.1.jar.[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 70aaae2d for Scala Compiler version 3.2.1[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 5776a858 for Scala Compiler version 3.2.1[0m
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
 [0m[[0m[0mdebug[0m] [0m[0m	/home/igunduz/.cache/coursier/arc/https/github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u292-b10/OpenJDK8U-jdk_x64_linux_hotspot_8u292b10.tar.gz/jdk8u292-b10/jre/lib/resources.jar:/home/igunduz/.cache/coursier/arc/https/github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u292-b10/OpenJDK8U-jdk_x64_linux_hotspot_8u292b10.tar.gz/jdk8u292-b10/jre/lib/rt.jar:/home/igunduz/.cache/coursier/arc/https/github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u292-b10/OpenJDK8U-jdk_x64_linux_hotspot_8u292b10.tar.gz/jdk8u292-b10/jre/lib/sunrsasign.jar:/home/igunduz/.cache/coursier/arc/https/github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u292-b10/OpenJDK8U-jdk_x64_linux_hotspot_8u292b10.tar.gz/jdk8u292-b10/jre/lib/jsse.jar:/home/igunduz/.cache/coursier/arc/https/github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u292-b10/OpenJDK8U-jdk_x64_linux_hotspot_8u292b10.tar.gz/jdk8u292-b10/jre/lib/jce.jar:/home/igunduz/.cache/coursier/arc/https/github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u292-b10/OpenJDK8U-jdk_x64_linux_hotspot_8u292b10.tar.gz/jdk8u292-b10/jre/lib/charsets.jar:/home/igunduz/.cache/coursier/arc/https/github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u292-b10/OpenJDK8U-jdk_x64_linux_hotspot_8u292b10.tar.gz/jdk8u292-b10/jre/lib/jfr.jar:/home/igunduz/.cache/coursier/arc/https/github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u292-b10/OpenJDK8U-jdk_x64_linux_hotspot_8u292b10.tar.gz/jdk8u292-b10/jre/classes:/home/igunduz/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.2.1/scala3-library_3-3.2.1.jar:/home/igunduz/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.10/scala-library-2.13.10.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
 [0m[[0m[0mdebug[0m] [0m[0m	/mnt/c/Users/ibgun/Desktop/Lectures/Software Engineering/Assignments/2/Assignment_02_-_Project_Skeleton/se-ws2223-assignment-02-student_version/target/scala-3.2.1/classes[0m
-[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 4.1841516 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 3.5896412 s[0m
 [0m[[0m[0mdebug[0m] [0m[0mdone compiling[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from de.uni_saarland.cs.se.decorator.Read...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: de.uni_saarland.cs.se.decorator.Read[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(de.uni_saarland.cs.se.decorator.Read)[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(de.uni_saarland.cs.se.decorator.Read,ModifiedNames(changes = UsedName(commit,[Default]), UsedName(rollback,[Default]), UsedName(write,[Default]), UsedName(read,[Default]))) invalidates 1 classes due to The de.uni_saarland.cs.se.decorator.Read has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(commit,[Default]), UsedName(rollback,[Default]), UsedName(write,[Default]), UsedName(read,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m  > by transitive inheritance: Set(de.uni_saarland.cs.se.decorator.Read)[0m
+[0m[[0m[0mdebug[0m] [0m[0m  > [0m
+[0m[[0m[0mdebug[0m] [0m[0m  > [0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from de.uni_saarland.cs.se.decorator.Database...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: de.uni_saarland.cs.se.decorator.Database[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding de.uni_saarland.cs.se.decorator.Read by de.uni_saarland.cs.se.decorator.Database[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding de.uni_saarland.cs.se.decorator.ListStorageDatabase by de.uni_saarland.cs.se.decorator.Database[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding de.uni_saarland.cs.se.decorator.MapStorageDatabase by de.uni_saarland.cs.se.decorator.Database[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncluding de.uni_saarland.cs.se.decorator.Write by de.uni_saarland.cs.se.decorator.Database[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(de.uni_saarland.cs.se.decorator.Database, de.uni_saarland.cs.se.decorator.ListStorageDatabase, de.uni_saarland.cs.se.decorator.MapStorageDatabase, de.uni_saarland.cs.se.decorator.Read, de.uni_saarland.cs.se.decorator.Write)[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(de.uni_saarland.cs.se.decorator.Database,ModifiedNames(changes = UsedName(write,[Default]), UsedName(rollback,[Default]), UsedName(read,[Default]), UsedName(commit,[Default]))) invalidates 5 classes due to The de.uni_saarland.cs.se.decorator.Database has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(write,[Default]), UsedName(rollback,[Default]), UsedName(read,[Default]), UsedName(commit,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m  > by transitive inheritance: Set(de.uni_saarland.cs.se.decorator.Database, de.uni_saarland.cs.se.decorator.ListStorageDatabase, de.uni_saarland.cs.se.decorator.MapStorageDatabase, de.uni_saarland.cs.se.decorator.Read, de.uni_saarland.cs.se.decorator.Write)[0m
+[0m[[0m[0mdebug[0m] [0m[0m  > [0m
+[0m[[0m[0mdebug[0m] [0m[0m  > [0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from de.uni_saarland.cs.se.decorator.Transaction...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: de.uni_saarland.cs.se.decorator.Transaction[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(de.uni_saarland.cs.se.decorator.Transaction)[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(de.uni_saarland.cs.se.decorator.Transaction,ModifiedNames(changes = UsedName(notifyAll,[Default]), UsedName(##,[Default]), UsedName(Transaction;init;,[Default]), UsedName(commit,[Default]), UsedName(tempstorage,[Default]), UsedName(toString,[Default]), UsedName(getClass,[Default]), UsedName(wait,[Default]), UsedName(Object;init;,[Default]), UsedName(synchronized,[Default]), UsedName(finalize,[Default]), UsedName(eq,[Default]), UsedName(notify,[Default]), UsedName(!=,[Default]), UsedName(==,[Default]), UsedName(hashCode,[Default]), UsedName($asInstanceOf,[Default]), UsedName(clone,[Default]), UsedName(isInstanceOf,[Default]), UsedName(tempstorage_=,[Default]), UsedName(write,[Default]), UsedName(read,[Default]), UsedName(ne,[Default]), UsedName(Transaction,[Default]), UsedName(storageType,[Default]), UsedName(equals,[Default]), UsedName(asInstanceOf,[Default]), UsedName(Database;init;,[Default]), UsedName(database,[Default]), UsedName(Storage,[Default]), UsedName(rollback,[Default]), UsedName($isInstanceOf,[Default]))) invalidates 1 classes due to The de.uni_saarland.cs.se.decorator.Transaction has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(notifyAll,[Default]), UsedName(##,[Default]), UsedName(Transaction;init;,[Default]), UsedName(commit,[Default]), UsedName(tempstorage,[Default]), UsedName(toString,[Default]), UsedName(getClass,[Default]), UsedName(wait,[Default]), UsedName(Object;init;,[Default]), UsedName(synchronized,[Default]), UsedName(finalize,[Default]), UsedName(eq,[Default]), UsedName(notify,[Default]), UsedName(!=,[Default]), UsedName(==,[Default]), UsedName(hashCode,[Default]), UsedName($asInstanceOf,[Default]), UsedName(clone,[Default]), UsedName(isInstanceOf,[Default]), UsedName(tempstorage_=,[Default]), UsedName(write,[Default]), UsedName(read,[Default]), UsedName(ne,[Default]), UsedName(Transaction,[Default]), UsedName(storageType,[Default]), UsedName(equals,[Default]), UsedName(asInstanceOf,[Default]), UsedName(Database;init;,[Default]), UsedName(database,[Default]), UsedName(Storage,[Default]), UsedName(rollback,[Default]), UsedName($isInstanceOf,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m  > by transitive inheritance: Set(de.uni_saarland.cs.se.decorator.Transaction)[0m
+[0m[[0m[0mdebug[0m] [0m[0m  > [0m
+[0m[[0m[0mdebug[0m] [0m[0m  > [0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from de.uni_saarland.cs.se.decorator.MapStorageDatabase...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: de.uni_saarland.cs.se.decorator.MapStorageDatabase[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(de.uni_saarland.cs.se.decorator.MapStorageDatabase)[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(de.uni_saarland.cs.se.decorator.MapStorageDatabase,ModifiedNames(changes = UsedName(read,[Default]), UsedName(rollback,[Default]), UsedName(write,[Default]), UsedName(commit,[Default]))) invalidates 1 classes due to The de.uni_saarland.cs.se.decorator.MapStorageDatabase has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(read,[Default]), UsedName(rollback,[Default]), UsedName(write,[Default]), UsedName(commit,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m  > by transitive inheritance: Set(de.uni_saarland.cs.se.decorator.MapStorageDatabase)[0m
+[0m[[0m[0mdebug[0m] [0m[0m  > [0m
+[0m[[0m[0mdebug[0m] [0m[0m  > [0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from de.uni_saarland.cs.se.decorator.ListStorageDatabase...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: de.uni_saarland.cs.se.decorator.ListStorageDatabase[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(de.uni_saarland.cs.se.decorator.ListStorageDatabase)[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(de.uni_saarland.cs.se.decorator.ListStorageDatabase,ModifiedNames(changes = UsedName(read,[Default]), UsedName(write,[Default]), UsedName(commit,[Default]), UsedName(rollback,[Default]))) invalidates 1 classes due to The de.uni_saarland.cs.se.decorator.ListStorageDatabase has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(read,[Default]), UsedName(write,[Default]), UsedName(commit,[Default]), UsedName(rollback,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m  > by transitive inheritance: Set(de.uni_saarland.cs.se.decorator.ListStorageDatabase)[0m
+[0m[[0m[0mdebug[0m] [0m[0m  > [0m
+[0m[[0m[0mdebug[0m] [0m[0m  > [0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from de.uni_saarland.cs.se.decorator.Logging...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: de.uni_saarland.cs.se.decorator.Logging[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(de.uni_saarland.cs.se.decorator.Logging)[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(de.uni_saarland.cs.se.decorator.Logging,ModifiedNames(changes = UsedName(notifyAll,[Default]), UsedName(##,[Default]), UsedName(commit,[Default]), UsedName(tempstorage,[Default]), UsedName(toString,[Default]), UsedName(getClass,[Default]), UsedName(wait,[Default]), UsedName(Object;init;,[Default]), UsedName(synchronized,[Default]), UsedName(finalize,[Default]), UsedName(eq,[Default]), UsedName(notify,[Default]), UsedName(!=,[Default]), UsedName(==,[Default]), UsedName(hashCode,[Default]), UsedName($asInstanceOf,[Default]), UsedName(clone,[Default]), UsedName(isInstanceOf,[Default]), UsedName(tempstorage_=,[Default]), UsedName(write,[Default]), UsedName(read,[Default]), UsedName(ne,[Default]), UsedName(storageType,[Default]), UsedName(equals,[Default]), UsedName(asInstanceOf,[Default]), UsedName(Database;init;,[Default]), UsedName(database,[Default]), UsedName(Storage,[Default]), UsedName(rollback,[Default]), UsedName(Logging;init;,[Default]), UsedName(Logging,[Default]), UsedName($isInstanceOf,[Default]))) invalidates 1 classes due to The de.uni_saarland.cs.se.decorator.Logging has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(notifyAll,[Default]), UsedName(##,[Default]), UsedName(commit,[Default]), UsedName(tempstorage,[Default]), UsedName(toString,[Default]), UsedName(getClass,[Default]), UsedName(wait,[Default]), UsedName(Object;init;,[Default]), UsedName(synchronized,[Default]), UsedName(finalize,[Default]), UsedName(eq,[Default]), UsedName(notify,[Default]), UsedName(!=,[Default]), UsedName(==,[Default]), UsedName(hashCode,[Default]), UsedName($asInstanceOf,[Default]), UsedName(clone,[Default]), UsedName(isInstanceOf,[Default]), UsedName(tempstorage_=,[Default]), UsedName(write,[Default]), UsedName(read,[Default]), UsedName(ne,[Default]), UsedName(storageType,[Default]), UsedName(equals,[Default]), UsedName(asInstanceOf,[Default]), UsedName(Database;init;,[Default]), UsedName(database,[Default]), UsedName(Storage,[Default]), UsedName(rollback,[Default]), UsedName(Logging;init;,[Default]), UsedName(Logging,[Default]), UsedName($isInstanceOf,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m  > by transitive inheritance: Set(de.uni_saarland.cs.se.decorator.Logging)[0m
+[0m[[0m[0mdebug[0m] [0m[0m  > [0m
+[0m[[0m[0mdebug[0m] [0m[0m  > [0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidating (transitively) by inheritance from de.uni_saarland.cs.se.decorator.Write...[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: de.uni_saarland.cs.se.decorator.Write[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated by transitive inheritance dependency: Set(de.uni_saarland.cs.se.decorator.Write)[0m
+[0m[[0m[0mdebug[0m] [0m[0mChange NamesChange(de.uni_saarland.cs.se.decorator.Write,ModifiedNames(changes = UsedName(rollback,[Default]), UsedName(read,[Default]), UsedName(write,[Default]), UsedName(commit,[Default]))) invalidates 1 classes due to The de.uni_saarland.cs.se.decorator.Write has the following regular definitions changed:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	UsedName(rollback,[Default]), UsedName(read,[Default]), UsedName(write,[Default]), UsedName(commit,[Default]).[0m
+[0m[[0m[0mdebug[0m] [0m[0m  > by transitive inheritance: Set(de.uni_saarland.cs.se.decorator.Write)[0m
+[0m[[0m[0mdebug[0m] [0m[0m  > [0m
+[0m[[0m[0mdebug[0m] [0m[0m  > [0m
+[0m[[0m[0mdebug[0m] [0m[0m        [0m
+[0m[[0m[0mdebug[0m] [0m[0mNew invalidations:[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: [0m
+[0m[[0m[0mdebug[0m] [0m[0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0m[0mdebug[0m] [0m[0mFinal step, transitive dependencies:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mNo classes were invalidated.[0m
