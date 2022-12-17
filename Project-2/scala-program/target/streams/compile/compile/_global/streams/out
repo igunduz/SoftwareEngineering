@@ -1,7 +1,22 @@
-[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /mnt/c/Users/ibgun/Desktop/Lectures/Software Engineering/Assignments/2/Assignment_02_-_Project_Skeleton/se-ws2223-assignment-02-student_version/src/main/scala/decorator/Database.scala:27:36 [0m[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m27 |[0m   [33moverride[0m [33mdef[0m read(key: String) : None[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                    ^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                    Not found: type None[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E163] Declaration Error: /mnt/c/Users/ibgun/Desktop/Lectures/Software Engineering/Assignments/2/Assignment_02_-_Project_Skeleton/se-ws2223-assignment-02-student_version/src/main/scala/decorator/Database.scala:23:16 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m23 |[0m   [33moverride[0m [33mdef[0m read(key: String) : Any = [33mthrow[0m [33mnew[0m ConfigurationError()[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0merror overriding [33mmethod[0m [35mread[0m in [33mtrait[0m [35mDatabase[0m of type (key: String): Option[String];[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  [33mmethod[0m [35mread[0m of type (key: String): Any has incompatible type[0m
 [0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
 [0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E163] Declaration Error: /mnt/c/Users/ibgun/Desktop/Lectures/Software Engineering/Assignments/2/Assignment_02_-_Project_Skeleton/se-ws2223-assignment-02-student_version/src/main/scala/decorator/Database.scala:33:16 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m33 |[0m   [33moverride[0m [33mdef[0m read(key: String) : Any = [33mthrow[0m [33mnew[0m ConfigurationError()[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0merror overriding [33mmethod[0m [35mread[0m in [33mtrait[0m [35mDatabase[0m of type (key: String): Option[String];[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  [33mmethod[0m [35mread[0m of type (key: String): Any has incompatible type[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E163] Declaration Error: /mnt/c/Users/ibgun/Desktop/Lectures/Software Engineering/Assignments/2/Assignment_02_-_Project_Skeleton/se-ws2223-assignment-02-student_version/src/main/scala/decorator/Database.scala:82:16 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m82 |[0m   [33moverride[0m [33mdef[0m read(key: String) : Unit = [0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                ^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0merror overriding [33mmethod[0m [35mread[0m in [33mtrait[0m [35mDatabase[0m of type (key: String): Option[String];[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  [33mmethod[0m [35mread[0m of type (key: String): Unit has incompatible type[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mthree errors found[0m

@@ -1,61 +1,9 @@
-[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /mnt/c/Users/ibgun/Desktop/Lectures/Software Engineering/Assignments/2/Assignment_02_-_Project_Skeleton/se-ws2223-assignment-02-student_version/src/test/scala/DecoratorDatabaseTest.scala:15:14 [0m[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m15 |[0m    assert(db.read([31m"foo"[0m).isEmpty)[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m           ^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m      value read is not a member of de.uni_saarland.cs.se.decorator.Read[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /mnt/c/Users/ibgun/Desktop/Lectures/Software Engineering/Assignments/2/Assignment_02_-_Project_Skeleton/se-ws2223-assignment-02-student_version/src/test/scala/DecoratorDatabaseTest.scala:16:42 [0m[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m16 |[0m    assertThrows[[35mConfigurationError[0m] { db.write([31m"foo"[0m, [31m"bar"[0m) }[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                       ^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0mvalue write is not a member of de.uni_saarland.cs.se.decorator.Read - did you mean db.wait?[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /mnt/c/Users/ibgun/Desktop/Lectures/Software Engineering/Assignments/2/Assignment_02_-_Project_Skeleton/se-ws2223-assignment-02-student_version/src/test/scala/DecoratorDatabaseTest.scala:17:42 [0m[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m17 |[0m    assertThrows[[35mConfigurationError[0m] { db.commit() }[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                       ^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m    value commit is not a member of de.uni_saarland.cs.se.decorator.Read[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /mnt/c/Users/ibgun/Desktop/Lectures/Software Engineering/Assignments/2/Assignment_02_-_Project_Skeleton/se-ws2223-assignment-02-student_version/src/test/scala/DecoratorDatabaseTest.scala:18:42 [0m[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m18 |[0m    assertThrows[[35mConfigurationError[0m] { db.rollback() }[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                       ^^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m  value rollback is not a member of de.uni_saarland.cs.se.decorator.Read[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /mnt/c/Users/ibgun/Desktop/Lectures/Software Engineering/Assignments/2/Assignment_02_-_Project_Skeleton/se-ws2223-assignment-02-student_version/src/test/scala/DecoratorDatabaseTest.scala:24:14 [0m[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m24 |[0m    assert(db.read([31m"foo"[0m).isEmpty)[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m           ^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m     value read is not a member of de.uni_saarland.cs.se.decorator.Write[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /mnt/c/Users/ibgun/Desktop/Lectures/Software Engineering/Assignments/2/Assignment_02_-_Project_Skeleton/se-ws2223-assignment-02-student_version/src/test/scala/DecoratorDatabaseTest.scala:25:7 [0m[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m25 |[0m    db.write([31m"foo"[0m, [31m"bar"[0m)[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m    ^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0mvalue write is not a member of de.uni_saarland.cs.se.decorator.Write - did you mean db.wait?[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /mnt/c/Users/ibgun/Desktop/Lectures/Software Engineering/Assignments/2/Assignment_02_-_Project_Skeleton/se-ws2223-assignment-02-student_version/src/test/scala/DecoratorDatabaseTest.scala:26:14 [0m[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m26 |[0m    assert(db.read([31m"foo"[0m).contains([31m"bar"[0m))[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m           ^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m     value read is not a member of de.uni_saarland.cs.se.decorator.Write[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /mnt/c/Users/ibgun/Desktop/Lectures/Software Engineering/Assignments/2/Assignment_02_-_Project_Skeleton/se-ws2223-assignment-02-student_version/src/test/scala/DecoratorDatabaseTest.scala:27:42 [0m[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m27 |[0m    assertThrows[[35mConfigurationError[0m] { db.commit() }[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                       ^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m   value commit is not a member of de.uni_saarland.cs.se.decorator.Write[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /mnt/c/Users/ibgun/Desktop/Lectures/Software Engineering/Assignments/2/Assignment_02_-_Project_Skeleton/se-ws2223-assignment-02-student_version/src/test/scala/DecoratorDatabaseTest.scala:28:42 [0m[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m28 |[0m    assertThrows[[35mConfigurationError[0m] { db.rollback() }[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                       ^^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m value rollback is not a member of de.uni_saarland.cs.se.decorator.Write[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /mnt/c/Users/ibgun/Desktop/Lectures/Software Engineering/Assignments/2/Assignment_02_-_Project_Skeleton/se-ws2223-assignment-02-student_version/src/test/scala/DecoratorDatabaseTest.scala:32:13 [0m[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m32 |[0m    [33mval[0m [36mdb[0m = Transaction(Write(Read(MapStorageDatabase())))[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m             ^^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m             Not found: Transaction[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /mnt/c/Users/ibgun/Desktop/Lectures/Software Engineering/Assignments/2/Assignment_02_-_Project_Skeleton/se-ws2223-assignment-02-student_version/src/test/scala/DecoratorDatabaseTest.scala:41:13 [0m[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m41 |[0m    [33mval[0m [36mdb[0m = Transaction(Write(Read(MapStorageDatabase())))[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m             ^^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m             Not found: Transaction[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /mnt/c/Users/ibgun/Desktop/Lectures/Software Engineering/Assignments/2/Assignment_02_-_Project_Skeleton/se-ws2223-assignment-02-student_version/src/test/scala/DecoratorDatabaseTest.scala:53:13 [0m[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m53 |[0m    [33mval[0m [36mdb[0m = Logging(Transaction(Write(Read(MapStorageDatabase()))))[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m             ^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m             Not found: Logging[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /mnt/c/Users/ibgun/Desktop/Lectures/Software Engineering/Assignments/2/Assignment_02_-_Project_Skeleton/se-ws2223-assignment-02-student_version/src/test/scala/DecoratorDatabaseTest.scala:53:21 [0m[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m53 |[0m    [33mval[0m [36mdb[0m = Logging(Transaction(Write(Read(MapStorageDatabase()))))[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                     ^^^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                     Not found: Transaction[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
-[0m[[0m[31merror[0m] [0m[0m13 errors found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /mnt/c/Users/ibgun/Desktop/Lectures/Software Engineering/Assignments/2/Assignment_02_-_Project_Skeleton/se-ws2223-assignment-02-student_version/src/test/scala/TraitsDatabaseTest.scala:63:9 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m63 |[0m      db.rollback()[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m      ^^^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m     value rollback is not a member of TraitsDatabaseTest.this.FullMapDB[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E008] Not Found Error: /mnt/c/Users/ibgun/Desktop/Lectures/Software Engineering/Assignments/2/Assignment_02_-_Project_Skeleton/se-ws2223-assignment-02-student_version/src/test/scala/TraitsDatabaseTest.scala:71:9 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m71 |[0m      db.commit()[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m      ^^^^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m      value commit is not a member of TraitsDatabaseTest.this.FullMapDB[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m

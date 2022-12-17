@@ -1,13 +1,2 @@
 [0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = /mnt/c/Users/ibgun/Desktop/Lectures/Software Engineering/Assignments/2/Assignment_02_-_Project_Skeleton/se-ws2223-assignment-02-student_version/target/scala-3.2.1/test-classes.bak[0m
-[0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	DecoratorDatabaseTest.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	DecoratorDatabaseTest.tasty[0m
-[0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	DecoratorDatabaseTest.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	DecoratorDatabaseTest.tasty[0m
-[0m[[0m[0mdebug[0m] [0m[0mRolling back changes to class files.[0m
-[0m[[0m[0mdebug[0m] [0m[0mRemoving generated classes:[0m
-[0m[[0m[0mdebug[0m] [0m[0mRestoring class files: [0m
-[0m[[0m[0mdebug[0m] [0m[0m	DecoratorDatabaseTest.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	DecoratorDatabaseTest.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: /mnt/c/Users/ibgun/Desktop/Lectures/Software Engineering/Assignments/2/Assignment_02_-_Project_Skeleton/se-ws2223-assignment-02-student_version/target/scala-3.2.1/test-classes.bak[0m
