@@ -1,5 +1,5 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(de.uni_saarland.cs.se.BasicSimpleTypeTests, org.scalatest.tools.Framework$$anon$1@2443acdf, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(de.uni_saarland.cs.se.BasicVariabilityTypeTests, org.scalatest.tools.Framework$$anon$1@2443acdf, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(de.uni_saarland.cs.se.BasicVariabilityTypeTests, org.scalatest.tools.Framework$$anon$1@426f66a4, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(de.uni_saarland.cs.se.BasicSimpleTypeTests, org.scalatest.tools.Framework$$anon$1@426f66a4, false, [SuiteSelector])[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mBasicSimpleTypeTests:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mThe expression 'Const(True)'[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should have the type 'BoolTy'[0m[0m
@@ -8,75 +8,22 @@
 [0m[[0m[0minfo[0m] [0m[0m[32mThe expression 'Const(Num(42))'[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should have the type 'NumTy'[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mThe variable in 'x'[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- must be in the context *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  scala.MatchError: Id(x) (of class de.uni_saarland.cs.se.Expression$Id)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.SimpleTypeChecker.checkType(SimpleTypeChecker.scala:76)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.SimpleTypeChecker$.checkType(SimpleTypeChecker.scala:62)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.BasicSimpleTypeTests.testFun$proxy4$1(BasicSimpleTypeTests.scala:31)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.BasicSimpleTypeTests.$init$$$anonfun$4(BasicSimpleTypeTests.scala:29)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply$$anonfun$1(Transformer.scala:22)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:31)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:21)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- must be in the context[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mThe arguments to 'Smaller'[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- must have the type 'Num' *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  scala.MatchError: Smaller(Const(Num(5)),Const(False)) (of class de.uni_saarland.cs.se.Expression$Smaller)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.SimpleTypeChecker.checkType(SimpleTypeChecker.scala:76)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.SimpleTypeChecker$.checkType(SimpleTypeChecker.scala:62)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.BasicSimpleTypeTests.testFun$proxy5$1(BasicSimpleTypeTests.scala:37)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.BasicSimpleTypeTests.$init$$$anonfun$5(BasicSimpleTypeTests.scala:35)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply$$anonfun$1(Transformer.scala:22)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:31)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:21)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- must have the type 'Num'[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mThe condition in 'If'[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- must have the type 'BoolTy' *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  scala.MatchError: If(Const(Num(3)),Const(True),Const(False)) (of class de.uni_saarland.cs.se.Expression$If)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.SimpleTypeChecker.checkType(SimpleTypeChecker.scala:76)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.SimpleTypeChecker$.checkType(SimpleTypeChecker.scala:62)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.BasicSimpleTypeTests.testFun$proxy6$1(BasicSimpleTypeTests.scala:43)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.BasicSimpleTypeTests.$init$$$anonfun$6(BasicSimpleTypeTests.scala:41)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply$$anonfun$1(Transformer.scala:22)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:31)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:21)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- must have the type 'BoolTy'[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mThe 'Id' in 'Let'[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m- must not be in the context already *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  scala.MatchError: Let(x,Const(Num(5)),Smaller(Id(x),Const(Num(4)))) (of class de.uni_saarland.cs.se.Expression$Let)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.SimpleTypeChecker.checkType(SimpleTypeChecker.scala:76)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.SimpleTypeChecker$.checkType(SimpleTypeChecker.scala:62)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.BasicSimpleTypeTests.testFun$proxy7$1(BasicSimpleTypeTests.scala:50)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.BasicSimpleTypeTests.$init$$$anonfun$7(BasicSimpleTypeTests.scala:47)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply$$anonfun$1(Transformer.scala:22)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:31)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:21)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Success(BoolTy) did not equal Error @ Let(x,Const(Num(5)),Smaller(Id(x),Const(Num(4))))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    Context: (x: NumTy) (BasicSimpleTypeTests.scala:51)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Analysis:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Success(context: -> (x: NumTy), expr: -> Let(x,Const(Num(5)),Smaller(Id(x),Const(Num(4)))), message: -> , t: BoolTy -> )[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mAll language features[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m- should be implemented *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  scala.MatchError: Let(x,Const(Num(5)),If(Const(True),Const(Num(1)),Id(x))) (of class de.uni_saarland.cs.se.Expression$Let)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.SimpleTypeChecker.checkType(SimpleTypeChecker.scala:76)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.SimpleTypeChecker$.checkType(SimpleTypeChecker.scala:62)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.BasicSimpleTypeTests.testFun$proxy8$1(BasicSimpleTypeTests.scala:57)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.BasicSimpleTypeTests.$init$$$anonfun$8(BasicSimpleTypeTests.scala:54)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply$$anonfun$1(Transformer.scala:22)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:31)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:21)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Success(BoolTy) did not equal Success(NumTy) (BasicSimpleTypeTests.scala:58)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Analysis:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Success(t: BoolTy -> NumTy)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mBasicVariabilityTypeTests:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mThe expression 'Const(True)'[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should have the type 'BoolTy'[0m[0m
@@ -85,80 +32,27 @@
 [0m[[0m[0minfo[0m] [0m[0m[32mThe expression 'Const(Num(42))'[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should have the type 'NumTy'[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mThe variable in 'x'[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- must be in the context *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  scala.MatchError: Id(x) (of class de.uni_saarland.cs.se.VExpression$Id)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.VariabilityTypeChecker.checkType(VariabilityTypeChecker.scala:83)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.VariabilityTypeChecker$.checkType(VariabilityTypeChecker.scala:61)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.BasicVariabilityTypeTests.testFun$proxy4$1(BasicVariabilityTypeTests.scala:33)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.BasicVariabilityTypeTests.$init$$$anonfun$4(BasicVariabilityTypeTests.scala:31)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply$$anonfun$1(Transformer.scala:22)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:31)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:21)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- must be in the context[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mThe arguments to 'Smaller'[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- must have the type 'Num' *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  scala.MatchError: Smaller(Const(Num(5)),Const(False)) (of class de.uni_saarland.cs.se.VExpression$Smaller)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.VariabilityTypeChecker.checkType(VariabilityTypeChecker.scala:83)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.VariabilityTypeChecker$.checkType(VariabilityTypeChecker.scala:61)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.BasicVariabilityTypeTests.testFun$proxy5$1(BasicVariabilityTypeTests.scala:41)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.BasicVariabilityTypeTests.$init$$$anonfun$5(BasicVariabilityTypeTests.scala:39)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply$$anonfun$1(Transformer.scala:22)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:31)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:21)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- must have the type 'Num'[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mThe condition in 'If'[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- must have the type 'BoolTy' *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  scala.MatchError: If(Const(Num(3)),Const(True),Const(False)) (of class de.uni_saarland.cs.se.VExpression$If)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.VariabilityTypeChecker.checkType(VariabilityTypeChecker.scala:83)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.VariabilityTypeChecker$.checkType(VariabilityTypeChecker.scala:61)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.BasicVariabilityTypeTests.testFun$proxy6$1(BasicVariabilityTypeTests.scala:49)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.BasicVariabilityTypeTests.$init$$$anonfun$6(BasicVariabilityTypeTests.scala:47)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply$$anonfun$1(Transformer.scala:22)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:31)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:21)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- must have the type 'BoolTy'[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mThe 'Id' in 'Let'[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- must not be in the context already *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  scala.MatchError: Let(x,Const(Num(5)),Smaller(Id(x),Const(Num(4)))) (of class de.uni_saarland.cs.se.VExpression$Let)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.VariabilityTypeChecker.checkType(VariabilityTypeChecker.scala:83)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.VariabilityTypeChecker$.checkType(VariabilityTypeChecker.scala:61)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.BasicVariabilityTypeTests.testFun$proxy7$1(BasicVariabilityTypeTests.scala:60)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.BasicVariabilityTypeTests.$init$$$anonfun$7(BasicVariabilityTypeTests.scala:55)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply$$anonfun$1(Transformer.scala:22)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:31)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:21)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- must not be in the context already[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mThe expression 'Choice(A || B, True, 5)'[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m- should have a VType with two entries *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  scala.MatchError: Choice((A_0 ∨ B_1),Const(True),Const(Num(5))) (of class de.uni_saarland.cs.se.VExpression$Choice)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.VariabilityTypeChecker.checkType(VariabilityTypeChecker.scala:83)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.VariabilityTypeChecker$.checkType(VariabilityTypeChecker.scala:61)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.BasicVariabilityTypeTests.testFun$proxy8$1(BasicVariabilityTypeTests.scala:68)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at de.uni_saarland.cs.se.BasicVariabilityTypeTests.$init$$$anonfun$8(BasicVariabilityTypeTests.scala:64)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply$$anonfun$1(Transformer.scala:22)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf(OutcomeOf.scala:85)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf.outcomeOf$(OutcomeOf.scala:31)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.OutcomeOf$.outcomeOf(OutcomeOf.scala:104)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:22)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  at org.scalatest.Transformer.apply(Transformer.scala:21)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  ...[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 795 milliseconds.[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Error @ Choice((A_0 ∨ B_1),Const(True),Const(Num(5)))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    Message: ERROR![0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    Context: (⊤,) did not equal Success((BoolTy => (A_0 ∨ B_1))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  (NumTy => ¬(A_0 ∨ B_1))) (BasicVariabilityTypeTests.scala:69)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Analysis:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Failure(context: (⊤,) -> , expr: Choice((A_0 ∨ B_1),Const(True),Const(Num(5))) -> , message: ERROR! -> , t: -> (BoolTy => (A_0 ∨ B_1))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m(NumTy => ¬(A_0 ∨ B_1)))[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 736 milliseconds.[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 16[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 2, aborted 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 6, failed 10, canceled 0, ignored 0, pending 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m*** 10 TESTS FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 13, failed 3, canceled 0, ignored 0, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m*** 3 TESTS FAILED ***[0m[0m
 [0m[[0m[31merror[0m] [0m[0mFailed tests:[0m
 [0m[[0m[31merror[0m] [0m[0m	de.uni_saarland.cs.se.BasicSimpleTypeTests[0m
 [0m[[0m[31merror[0m] [0m[0m	de.uni_saarland.cs.se.BasicVariabilityTypeTests[0m

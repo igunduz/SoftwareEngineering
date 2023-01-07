@@ -73,7 +73,29 @@ class SimpleTypeChecker extends TypeChecker[Expression, Type, Context] {
         case True =>  new Success(BoolTy) 
         case False => new Success(BoolTy) 
         case constant: Num =>  new Success(NumTy)
+        case _ => new Failure(expr,context,"ERROR!")
       };
+      case expr: Id => expr.id match{
+        case cont if(expr.id == context) => new Success(BoolTy)
+        case _ => new Failure(expr,context,"ERROR!")
+      };
+      case expr: Smaller => expr.rhs match{
+       case i if(expr.rhs.getClass.toString == "int") =>  new Success(BoolTy)
+       case j if(expr.lhs.getClass.toString == "int") =>  new Success(BoolTy)
+       case _ => new Failure(expr,context,"ERROR!")
+      };
+      case expr: If => expr.condition match{
+        case t if(expr.condition.toString == "true") =>  new Success(BoolTy)
+        case f if(expr.condition.toString == "false") => new Failure(expr,context,"ERROR!")
+        //case thenExpr if(expr.thenExpr.toString == "true" || expr.thenExpr.toString == "false") => new Success(BoolTy)
+        //case elseExpr if(expr.elseExpr.toString == "true"  || expr.elseExpr.toString == "false") => new Success(BoolTy)
+        case _ => new Failure(expr,context,"ERROR!")
+      };
+      case expr: Let => expr.varValue match{
+        case some if(context != expr.varValue) => new Success(BoolTy)
+        case _ => new Failure(expr,context,"ERROR!")
+      }
+      //case _ => new Failure(expr,context,"ERROR!")
 }
 }
 }

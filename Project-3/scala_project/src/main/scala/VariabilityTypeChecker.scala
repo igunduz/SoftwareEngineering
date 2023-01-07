@@ -80,8 +80,32 @@ class VariabilityTypeChecker extends TypeChecker[VExpression, VType, VContext] {
         case True => new Success(VType(BoolTy -> Formulas.True)) 
         case False => new Success(VType(BoolTy -> Formulas.True))
         case const: Num => new Success(VType(NumTy -> Formulas.True)) 
+        case _ => new Failure(expr,context,"ERROR!")
       };
-      
+      case expr: Id => expr.id match{
+        case cont if(expr.id == context) => new Success(VType(BoolTy -> Formulas.True))
+        case _ => new Failure(expr,context,"ERROR!")
+      };
+      case expr: Smaller => expr.rhs match{
+       case i if(expr.rhs.getClass.toString == "int") =>  new Success(VType(BoolTy -> Formulas.True))
+       case j if(expr.lhs.getClass.toString == "int") =>  new Success(VType(BoolTy -> Formulas.True))
+       case _ => new Failure(expr,context,"ERROR!")
+      };
+      case expr: If => expr.condition match{
+        case t if(expr.condition.toString == "true") =>  new Success(VType(BoolTy -> Formulas.True))
+        case f if(expr.condition.toString == "false") => new Success(VType(BoolTy -> Formulas.True))
+        //case thenExpr if(expr.thenExpr.toString == "true" || expr.thenExpr.toString == "false") => new Success(VType(BoolTy -> Formulas.True))
+        //case elseExpr if(expr.elseExpr.toString == "true"  || expr.elseExpr.toString == "false") => new Success(VType(BoolTy -> Formulas.True))
+        case _ => new Failure(expr,context,"ERROR!")
+      }
+     case expr: Let => expr.variable match{
+        case some if(context == expr.variable) => new Success(VType(BoolTy -> Formulas.True))
+        case _ => new Failure(expr,context,"ERROR!")
+      }
+     //case expr: Choice => expr.presenceCondition match{
+       // TODO
+     //}
+      case _ => new Failure(expr,context,"ERROR!")
   }
 }
 }
