@@ -74,9 +74,7 @@ class SimpleTypeChecker extends TypeChecker[Expression, Type, Context] {
         case False =>  if (context == Boolean) new Success(BoolTy) else new Failure(expr,context,"ERROR")
         case constant: Num =>  if (context == Int) new Success(NumTy) else new Failure(expr,context,"ERROR")
       }
-      //case expr: Id => expr.id match{
-        //TODO
-      //}
+    case expr: Id => new Failure(expr,context,"ERROR")
   }
 }
 }
