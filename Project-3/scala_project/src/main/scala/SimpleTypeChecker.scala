@@ -69,12 +69,16 @@ class SimpleTypeChecker extends TypeChecker[Expression, Type, Context] {
 
   override def checkType(expr: Expression, context: Context): Result = {
     expr match {
-      case expr: Const => expr.c match {
+      case expr: Const => expr.con match {
         case True =>  if (context == Boolean) new Success(BoolTy) else new Failure(expr,context,"ERROR")
         case False =>  if (context == Boolean) new Success(BoolTy) else new Failure(expr,context,"ERROR")
         case constant: Num =>  if (context == Int) new Success(NumTy) else new Failure(expr,context,"ERROR")
       }
-    case expr: Id => new Failure(expr,context,"ERROR")
+    case expr: Id => if(context.typeForVar(expr).isEmpty) {new Failure(expr,context,"ERROR")} else {//TODO}
+    case expr: Smaller => //TODO
+    case expr: If => //TODO
+    case expr: Let => //TODO
+    case expr: Choice => //TODO
   }
 }
 }
