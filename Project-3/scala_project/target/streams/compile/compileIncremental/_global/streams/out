@@ -1,20 +1,38 @@
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m
 [0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
-[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 0 products, 0 sources, 0 libraries[0m
+[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 85 products, 4 sources, 2 libraries[0m
 [0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/Expression.scala, ${BASE}/src/main/scala/SimpleTypeChecker.scala, ${BASE}/src/main/scala/TypeChecking.scala, ${BASE}/src/main/scala/VariabilityTypeChecker.scala)[0m
-[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(${BASE}/src/main/scala/SimpleTypeChecker.scala, ${BASE}/src/main/scala/VariabilityTypeChecker.scala, ${BASE}/src/main/scala/TypeChecking.scala, ${BASE}/src/main/scala/Expression.scala), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())[0m
-[0m[[0m[0mdebug[0m] [0m[0mFull compilation, no sources in previous analysis.[0m
-[0m[[0m[0mdebug[0m] [0m[0mall 4 sources are invalidated[0m
-[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: [0m
-[0m[[0m[0mdebug[0m] [0m[0mRecompiling all sources: number of invalidated sources > 50.0 percent of all sources[0m
+[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(${BASE}/src/main/scala/VariabilityTypeChecker.scala), unmodified = ...),Set(),Set(),API Changes: Set())[0m
+[0m[[0m[0mdebug[0m] [0m[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial source changes:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	removed: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	added: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	modified: Set(${BASE}/src/main/scala/VariabilityTypeChecker.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInvalidated products: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mExternal API changes: API Changes: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mModified binary dependencies: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial directly invalidated classes: Set(de.uni_saarland.cs.se.VariabilityTypeChecker, de.uni_saarland.cs.se.VariabilityTypeChecker$package, de.uni_saarland.cs.se.VariabilityContext)[0m
+[0m[[0m[0mdebug[0m] [0m[0mSources indirectly invalidated by:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	product: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	binary dep: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0m	external source: Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated classes: Set(de.uni_saarland.cs.se.VariabilityTypeChecker, de.uni_saarland.cs.se.VariabilityTypeChecker$package, de.uni_saarland.cs.se.VariabilityContext)[0m
+[0m[[0m[0mdebug[0m] [0m[0mAll initially invalidated sources:Set(${BASE}/src/main/scala/VariabilityTypeChecker.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: de.uni_saarland.cs.se.VariabilityTypeChecker, de.uni_saarland.cs.se.VariabilityTypeChecker$package, de.uni_saarland.cs.se.VariabilityContext[0m
 [0m[[0m[0mdebug[0m] [0m[0mcompilation cycle 1[0m
-[0m[[0m[0minfo[0m] [0m[0mcompiling 4 Scala sources to /mnt/c/Users/ibgun/Desktop/Lectures/Software Engineering/Assignments/3/Assignment_03_-_Project_Skeleton/se-ws2122-assignment-03-ws2223_student_version/target/scala-3.2.1/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /mnt/c/Users/ibgun/Desktop/Lectures/Software Engineering/Assignments/3/Assignment_03_-_Project_Skeleton/se-ws2122-assignment-03-ws2223_student_version/target/scala-3.2.1/classes ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mReturning already retrieved and compiled bridge: /home/igunduz/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-sbt-bridge/3.2.1/scala3-sbt-bridge-3.2.1.jar.[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 70202e00 for Scala Compiler version 3.2.1[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 71864f30 for Scala Compiler version 3.2.1[0m
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
 [0m[[0m[0mdebug[0m] [0m[0m	/home/igunduz/.cache/coursier/arc/https/github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u292-b10/OpenJDK8U-jdk_x64_linux_hotspot_8u292b10.tar.gz/jdk8u292-b10/jre/lib/resources.jar:/home/igunduz/.cache/coursier/arc/https/github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u292-b10/OpenJDK8U-jdk_x64_linux_hotspot_8u292b10.tar.gz/jdk8u292-b10/jre/lib/rt.jar:/home/igunduz/.cache/coursier/arc/https/github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u292-b10/OpenJDK8U-jdk_x64_linux_hotspot_8u292b10.tar.gz/jdk8u292-b10/jre/lib/sunrsasign.jar:/home/igunduz/.cache/coursier/arc/https/github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u292-b10/OpenJDK8U-jdk_x64_linux_hotspot_8u292b10.tar.gz/jdk8u292-b10/jre/lib/jsse.jar:/home/igunduz/.cache/coursier/arc/https/github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u292-b10/OpenJDK8U-jdk_x64_linux_hotspot_8u292b10.tar.gz/jdk8u292-b10/jre/lib/jce.jar:/home/igunduz/.cache/coursier/arc/https/github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u292-b10/OpenJDK8U-jdk_x64_linux_hotspot_8u292b10.tar.gz/jdk8u292-b10/jre/lib/charsets.jar:/home/igunduz/.cache/coursier/arc/https/github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u292-b10/OpenJDK8U-jdk_x64_linux_hotspot_8u292b10.tar.gz/jdk8u292-b10/jre/lib/jfr.jar:/home/igunduz/.cache/coursier/arc/https/github.com/AdoptOpenJDK/openjdk8-binaries/releases/download/jdk8u292-b10/OpenJDK8U-jdk_x64_linux_hotspot_8u292b10.tar.gz/jdk8u292-b10/jre/classes:/home/igunduz/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.2.1/scala3-library_3-3.2.1.jar:/home/igunduz/.cache/coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.10/scala-library-2.13.10.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
 [0m[[0m[0mdebug[0m] [0m[0m	/mnt/c/Users/ibgun/Desktop/Lectures/Software Engineering/Assignments/3/Assignment_03_-_Project_Skeleton/se-ws2122-assignment-03-ws2223_student_version/target/scala-3.2.1/classes:/home/igunduz/.sbt/1.0/staging/ca0d540220502776ebdc/cafesat/target/scala-2.13/classes:/home/igunduz/.cache/coursier/v1/https/repo1.maven.org/maven2/com/regblanc/scala-smtlib_2.13/0.2.1-42-gc68dbaa/scala-smtlib_2.13-0.2.1-42-gc68dbaa.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mCompilation failed[0m
-[0m[[0m[31merror[0m] [0m[0m(Compile / [31mcompileIncremental[0m) Compilation failed[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 3.6450458 s[0m
+[0m[[0m[0mdebug[0m] [0m[0mdone compiling[0m
+[0m[[0m[0mdebug[0m] [0m[0mNew invalidations:[0m
+[0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: [0m
+[0m[[0m[0mdebug[0m] [0m[0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0m[0mdebug[0m] [0m[0mFinal step, transitive dependencies:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Set()[0m
+[0m[[0m[0mdebug[0m] [0m[0mNo classes were invalidated.[0m

@@ -1,7 +1,47 @@
 [0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = /mnt/c/Users/ibgun/Desktop/Lectures/Software Engineering/Assignments/3/Assignment_03_-_Project_Skeleton/se-ws2122-assignment-03-ws2223_student_version/target/scala-3.2.1/classes.bak[0m
 [0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityTypeChecker.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityContext.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityContext$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityTypeChecker$package$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityTypeChecker$package.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityContext$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityTypeChecker$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityTypeChecker.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityContext.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityContext$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityTypeChecker$package$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityTypeChecker$package.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityContext$$anon$1.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityTypeChecker$.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
-[0m[[0m[0mdebug[0m] [0m[0mRolling back changes to class files.[0m
-[0m[[0m[0mdebug[0m] [0m[0mRemoving generated classes:[0m
-[0m[[0m[0mdebug[0m] [0m[0mRestoring class files: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityTypeChecker.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityContext.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityContext$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityTypeChecker$package$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityTypeChecker$package.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityContext$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityTypeChecker$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityTypeChecker.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityContext.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityContext$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityTypeChecker$package$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityTypeChecker$package.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityContext$$anon$1.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityTypeChecker$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0mRegistering generated classes:[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityTypeChecker.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityContext.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityContext$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityTypeChecker$package$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityTypeChecker$package.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityContext$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityTypeChecker$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityTypeChecker.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityContext.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityContext$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityTypeChecker$package$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityTypeChecker$package.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityContext$$anon$1.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	VariabilityTypeChecker$.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: /mnt/c/Users/ibgun/Desktop/Lectures/Software Engineering/Assignments/3/Assignment_03_-_Project_Skeleton/se-ws2122-assignment-03-ws2223_student_version/target/scala-3.2.1/classes.bak[0m

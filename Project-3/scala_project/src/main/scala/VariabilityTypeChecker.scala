@@ -75,6 +75,13 @@ object VariabilityTypeChecker {
 class VariabilityTypeChecker extends TypeChecker[VExpression, VType, VContext] {
 
   override def checkType(expr: VExpression, context: VContext): VResult = {
-    // TODO: implement task b)
+    expr match {
+      case expr: Const => expr.c match {
+        case True => new Success(VType(BoolTy -> Formulas.True)) 
+        case False => new Success(VType(BoolTy -> Formulas.True))
+        case const: Num => new Success(VType(NumTy -> Formulas.True)) 
+      };
+      
   }
+}
 }

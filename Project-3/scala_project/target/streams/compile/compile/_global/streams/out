@@ -1,10 +1,9 @@
-[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E007] Type Mismatch Error: /mnt/c/Users/ibgun/Desktop/Lectures/Software Engineering/Assignments/3/Assignment_03_-_Project_Skeleton/se-ws2122-assignment-03-ws2223_student_version/src/main/scala/VariabilityTypeChecker.scala:77:74 [0m[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m77 |[0m  [33moverride[0m [33mdef[0m checkType(expr: VExpression, context: VContext): VResult = {[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m                                                                          ^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                 Found:    Unit[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m                                 Required: de.uni_saarland.cs.se.VResult[0m
-[0m[[0m[31merror[0m] [0m[0m[31m78 |[0m    [34m// TODO: implement task b)[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m79 |[0m  }[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m-- [E029] Pattern Match Exhaustivity Warning: /mnt/c/Users/ibgun/Desktop/Lectures/Software Engineering/Assignments/3/Assignment_03_-_Project_Skeleton/se-ws2122-assignment-03-ws2223_student_version/src/main/scala/VariabilityTypeChecker.scala:78:4 [0m[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m78 |[0m    expr [33mmatch[0m {[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m[33m   |[0m    ^^^^[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[33mmatch[0m may not be exhaustive.[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0mIt would fail on pattern case: VExpression.Id(_), VExpression.Smaller(_, _), VExpression.If(_, _, _), VExpression.Let(_, _, _), VExpression.Choice(_, _, _)[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m[0m
+[0m[[0m[33mwarn[0m] [0m[0m[33m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
