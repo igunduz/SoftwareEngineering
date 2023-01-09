@@ -80,8 +80,7 @@ class SimpleTypeChecker extends TypeChecker[Expression, Type, Context] {
         case _ => new Failure(expr,context,"ERROR!")
       };
       case expr: Smaller => expr.rhs match{
-       case i if(expr.rhs.getClass.toString == "int") =>  new Success(BoolTy)
-       case j if(expr.lhs.getClass.toString == "int") =>  new Success(BoolTy)
+       case i if(expr.rhs.getClass.toString == "int" && expr.lhs.getClass.toString == "int") =>  new Success(BoolTy)
        case _ => new Failure(expr,context,"ERROR!")
       };
       case expr: If => expr.condition match{
