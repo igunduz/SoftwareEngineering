@@ -87,8 +87,7 @@ class VariabilityTypeChecker extends TypeChecker[VExpression, VType, VContext] {
         case _ => new Failure(expr,context,"ERROR!")
       };
       case expr: Smaller => expr.rhs match{
-       case i if(expr.rhs.getClass.toString == "int") =>  new Success(VType(BoolTy -> Formulas.True))
-       case j if(expr.lhs.getClass.toString == "int") =>  new Success(VType(BoolTy -> Formulas.True))
+       case i if(expr.rhs.getClass.toString == "int" && expr.lhs.getClass.toString == "int") =>  new Success(VType(BoolTy -> Formulas.True))
        case _ => new Failure(expr,context,"ERROR!")
       };
       case expr: If => expr.condition match{
